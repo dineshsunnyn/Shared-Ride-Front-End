@@ -36,3 +36,280 @@
     transform: rotate(360deg);
   }
 }
+
+ /* LOGIN PAGE CSS */
+/* login-page styles */
+.login-page {
+  display: flex;
+  height: 100vh;  /* Full viewport height */
+}
+
+/* image section */
+.image-section {
+  flex: 1;  /* Take up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  /* Ensure image doesn't overflow */
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Make sure the image covers the section properly */
+}
+
+/* form section */
+.form-section {
+  flex: 1;  /* Take up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;  /* Optional: background color for the form section */
+}
+
+/* form container styling */
+.form-container {
+  width: 80%;  /* Form width, can adjust as needed */
+  max-width: 500px;  /* Max width for the form */
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* height: 40%;
+  max-height: 800px; */
+}
+
+/* title and subtitle styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 50%;
+}
+
+/* input field and button styles */
+.input-field {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* HOME PAGE CSS */
+
+
+/* Home.css */
+/* Home.css */
+
+/* Home.css */
+
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;  /* Light background color */
+}
+
+.left-section {
+  width: 25%;  /* Takes up 25% of the page */
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically and horizontally center the buttons */
+}
+
+.welcome-message {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  /* Space between the buttons */
+  width: 100%;
+  align-items: flex-start;  /* Align buttons to the left */
+  padding-left: 15%;  /* Move buttons more to the right */
+}
+
+.menu-btn {
+  background-color: white; /* White background */
+  color: #00796b;  /* Green text color */
+  font-size: 1.1em;
+  padding: 15px;
+  border: 2px solid #00796b; /* Thin green border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80%;  /* Make the buttons take up most of the width */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.menu-btn:hover {
+  background-color: #00796b;  /* Green background on hover */
+  color: white;  /* White text color on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.expenses-btn {
+  background-color: #ffffff; /* White background */
+  color: #d32f2f;  /* Red text color for the Expenses button */
+  border: 2px solid #d32f2f; /* Red border for the Expenses button */
+}
+
+.expenses-btn:hover {
+  background-color: #d32f2f; /* Red background on hover */
+  color: white;  /* White text color on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+/* New Logout Button */
+.logout-btn {
+  background-color: #ffffff; /* White background */
+  color: #d32f2f;  /* Red text color for the Logout button */
+  border: 2px solid #d32f2f; /* Red border */
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f; /* Red background on hover */
+  color: white;  /* White text color on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.right-section {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  /* Light shadow for right section */
+}
+
+
+/* LOOK FOR RIDE  */
+/* General container for the form */
+.ride-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  /* Limit max-width for better readability */
+  margin: 0 auto;
+  /* Centering the form */
+}
+
+.section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Flexbox for the search form */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Location fields container (From, Icon, To) */
+.location-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.location-field {
+  flex: 1;
+  /* Makes the fields take equal space */
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  /* Adds space around the arrow icon */
+}
+
+/* Additional fields container (When, Payment) */
+.additional-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.time-field,
+.payment-field {
+  flex: 1;
+  /* Makes the fields take equal space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  /* Ensure the input fills its container */
+  max-width: 160px;
+  /* Limit input width */
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+  /* Match button width with inputs */
+  margin: 0 auto;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}

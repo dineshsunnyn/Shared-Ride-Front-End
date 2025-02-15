@@ -1,0 +1,77 @@
+/* GiveRide.css */
+
+.give-ride-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.give-ride-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Grid */
+.give-ride-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* 8 equal columns */
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header Row */
+.give-ride-header {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* Data Rows */
+.ride-item {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add smooth transition for pop-out effect */
+}
+
+/* Hover Effect (Pop-out and Shadow) */
+.ride-item:hover {
+    background-color: #e1f7fc;
+    /* Light blue color on hover */
+    transform: translateY(-10px);
+    /* Lift the row more for pop-out effect */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow to enhance the pop-out effect */
+}
+
+/* No Rides Message */
+.no-rides {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .give-ride-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .give-ride-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on very small screens */
+    }
+}
